@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<head>
+    <title>F453</title>
+    <script src="JS.js"></script>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+	<button onclick="shuffle();">Shuffle</button>
+	<main id="ordered">
+        <div><del>CISC</del> has many addressing modes.</div>
+        <div><del>RISC</del> does not have many addressing modes.</div>
+        <div>When adding to a stack, the <del>amount of space</del> needs to be checked and the <del>pointer</del> incremented.</div>
+        <div>Pivot method of quicksort:
+        	<ol>
+            	<li>Select random item to be the <del>pivot</del>.</li>
+                <li>Move all items into <del>two lists</del> for greater and smaller items.</li>
+                <li><del>Repeat</del> for each list until each is length <del>one</del>.</li>
+            </ol>
+        </div>
+        <div>OCR calls methods '<del>operations</del>' for objects.</div>
+        <div>Library routines are <del>error free</del> and <del>save time</del> as they are <del>already compiled</del>.</div>
+        <div>The MDR may <del>change</del> more than once in a single <del>cycle</del>.</div>
+        <div>Declaritive languages are used for <del>Expert Systems</del> where an answer to one question will <del>affect the answer to the next question</del>.</div>
+        <div><del>Declaritive Languages</del> are used for Expert Systems where an answer to one question will affect the answer to the next question.</div>
+        <div><del>Operand</del>: the thing being operated on.</div>
+        <div>DBMS: <del>Database Management System</del> is used by a <del>database manager</del>.
+        <div><del>Super</del> Class<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\/<br>
+        <del>Sub</del> Class</div>
+        <div>Registers store data that can be accessed <del>quickly</del> for <del>specific</del> purposes, where <del>frequent</del> access is needed.</div>
+        <div>Encapsulation: the idea that <del>attributes</del> can only be <del>accessed</del> through that object's <del>operations</del>.</div>
+        <div>Translation:
+            <ol>
+                <li><del>Lexical</del> Analysis:
+                    <ul>
+                        <li>W<del>hitespace</del> (<del>is removed</del>)</li>
+                        <li>E<del>rrors</del> (<del>in keyword and identifier names</del>)</li>
+                        <li>T<del>okens</del></del> (<del>are created from input characters</del>)</li>
+                        <li>S<del>ymbol Table</del> (<del>is made to match identifiers with their data type, scope, and memory location</del>)</li>
+                    </ul>
+                </li>
+                <li><del>Syntax</del> Analysis:
+                    <ul>
+                        <li>L<del>abel Checks</del></li>
+                        <li>F<del>low Control Checks</del></li>
+                        <li>D<del>eclaration Checks</del></li>
+                    </ul>
+                </li>
+                <li>Code <del>Generation</del> and <del>Optimisation</del></li>
+            </ol>
+        </div>
+        <div><img src="image1.png"> is an anonymous <del>Object</del> of <del>Class</del> 'Name1'.</div>
+        <div>Derived classes may have their own <del>Attributes</del>, <del>Operations</del>, and <del>sub-classes</del>.</div>
+        <div>Queues are <del>circular</del>.
+        <div>When data is popped from a queue, '<del>front</del>' is incremented.</div>
+        <div>When data is appended to a queue, '<del>next</del>' is incremented.</div>
+        <div>The 'front' <del>pointer</del> in a queue is incremented when data is <del>popped</del>.</div>
+        <div>The 'next' <del>pointer</del> in a queue is incremented when data is <del>appended</del>.</div>
+        <div>In queues, new data is stored from <del>left to right</del>.</div>
+        <div>In a queue, 'front' and 'next' point to the same <del>location</del> when <del>empty</del>.</div>
+        <div>A queue is full when 'next' = <del>'front' - 1</del>.</div>
+        <div>Array Processors use <del>SIMD</del>.</div>
+        <div>SIMD: <del>Single Instruction Multiple Data</del> is used in Array Processors.</div>
+        <div>Object code is <del>portable</del> and can be used on lots of different <del>machines</del>.</div>
+        <div>Only <del>compilers</del> do optimisation.</div>
+        <div><del>Scheduling</del> gives fast response times and maximises <del>the number of users</del> possible on the system.</div>
+        <div>Round Robin is <del>pre-emptive</del> scheduling.</div>
+        <div>FIFO: <del>First in First Out</del> is used in <del>queues</del>.</div>
+        <div>LIFO: <del>Last in First Out</del> is used in <del>stacks</del>.</div>
+        <div>When choosing whether to do an interrupt:
+        	<ol>
+            	<li><del>Interrupt register</del> is checked,</li>
+                <li>when <del>each cycle is completed</del>.</li>
+                <li>The <del>priority</del> of the current task is compared with that of the one in the interrupt register.</li>
+                <li>When an interrupt is completed, <del>another interrupt check is made</del>.</li>
+            </ol>
+        </div>
+        <div>Assemblers:
+        	<ol>
+            	<li>Storage is reserved for <del>instructions and data</del>.</li>
+                <li>Creates a <del>symbol table</del> to match <del>labels</del> and <del>addresses</del>.</li>
+                <li>Assemblers also check <del>syntax</del> and give <del>error diagnostics</del>.</li>
+            </ol>
+        </div>
+        <div>Von Neuman features:
+        	<ul>
+            	<li>A single <del>control unit</del>.</li>
+                <li>Executes one <del>instruction</del> at a time in <del>order</del>.</li>
+                <li>Uses <del>fetch, decode, execute</del> cycle.</li>
+                <li>Program is stored with data and instructions <del>in the same format</del>.</li>
+            </ul>
+        </div>
+        <div>Both input and output data go through the <del>accumulator</del>.</div>
+        <div>To merge files they must have <del>a common key</del>.</div>
+        <div>Global variables are defined at <del>the start of the program</del>.</div>
+        <div>The program counter increments at <del>the start of the cycle</del>.</div>
+        <div>The PC (<del>Program Counter</del>) contains <del>the address of the next instruction</del>.</div>
+        <div><del>DBMS</del> is software that contains both DDL and DML.</div>
+        <div>DBMS may provide <del>an interface</del> and <del>views</del>.</div>
+        <div>Pre-emptive schedulers <del>stop jobs that are currently running for another job</del>.</div>
+        <div>Non-pre-emptive schedulers <del>leave a job running until it is finished, so other jobs must wait</del>.</div>
+        <div>Both paging and segmentation use <del>indexes</del> to keep track of data.</div>
+        <div>Spooling data is stored <del>on the hard drive</del>. References to it go in <del>the spool queue</del>.</div>
+        <div><del>Higher priority jobs</del> can push into the spool queue.</div>
+        <div>A lexeme referes to a <del>symbol</del> or <del>word</del> that has <del>meaning</del> in the program.
+        <div>Boot Process:
+        	<ol>
+            	<li><del>CPU</del> finds <del>BIOS</del></li>
+                <li><del>BIOS</del> runs <del>POST</del></li>
+                <li><del>POST</del> starts <del>the Boot Program</del></li>
+                <li><del>Boot Program</del> finds <del>an OS to load</del></li>
+                <li><del>BIOS</del> copies itself into memory</li>
+                <li><del>The OS</del> completes the <del>Boot Process</del></li>
+            </ol>
+        </div>
+        <div>BIOS: <del>Basic Input Output System</del></div>
+        <div>BIOS is stored in <del>ROM</del> and <del>CMOSRAM</del></div>
+        <div><del>Bootfile</del> provides personal settings</div>
+        <div>Bootfile provides <del>personal settings</del></div>
+        <div>The Bootfile is used in <del>the Boot Program</del> and is stored in <del>CMOSRAM</del></div>
+        <div>POST: <del>Power on Self Test</del></div>
+        <div>POST <del>verifies and clears</del> the CPU registers</div>
+        <div><del>POST</del> verifies and clears the CPU registers</div>
+        <div><del>POST</del> checks hardware e.g. secondary storage and peripherals.</div>
+        <div>When the OS completes the Boot Process, it <del>loads the drivers</del>.</div>
+        <div>FAT: <del>File Allocation Table</del></div>
+        <div>FAT is an area of storage that:
+        	<ul>
+            	<li>has a map of <del>where files are stored</del>, using <del>linked lists</del>.</li>
+                <li>has a list of <del>empty clusters</del>.</li>
+                <li>has data about each file e.g. <del>permissions, size, name</del>.</li>
+                <li>is used by the <del>Operating System</del> when files are accessed.</li>
+                <li>gets updated by the OS whenever <del>new data is stored or retreived</del>.</li>
+            </ul>
+        </div>
+        <div>Data Dictionary: <del>File containing meta data about the database</del> e.g. <del>names of tables, data types, keys etc.</del></div>
+        <div>E<del>xternal</del> Level Schema: <del>The way users see the database (through views)</del></div>
+        <div>L<del>ogical/Conceptual</del> Level: <del>The way all of the data is stored in the database (seen by admins)</del></div>
+        <div>I<del>nternal</del> Level: <del>The low-level representation of the database on disk (managed by DBMS)</del></div>
+        <div>The address in the index register is <del>relative</del>. <del>An absolute address</del> is needed to <del>adjust it</del>.</div>
+        <div>Types of UML:
+        	<ul>
+            	<li>S<del>equence</del></li>
+                <li>A<del>ctivity</del></li>
+                <li>C<del>ommunication</del></li>
+                <li>U<del>se Case</del></li>
+            </ul>
+        </div>
+        <div>Communication diagram arrows require <del>numbering</del>.</div>
+        <div>UML: <del>Unified Modelling Language</del></div>
+        <div><img src="Image3.png"><del>Sequence</del> Diagram</div>
+        <div><img src="Image4.png"><del>Activity</del> Diagram</div>
+        <div><img src="Image6.png"><del>Communication</del> Diagram</div>
+        <div><img src="Image5.png"><del>Use Case</del> Diagram</div>
+        <div><img src="Image7.png">This represents <del>an actor</del>.</div>
+        <div>Co-processors have <del>registers that are long enough to handle the length of floating point numbers in one go</del>.</div>
+        <div><del>Co-processors</del> have registers that are long enough to handle the length of floating point numbers in one go.</div>
+        <div>Lines between actions and use cases are called <del>associations</del>.</div>
+        <div>Declarative Lnaguages consist of <del>Facts, Rules, Goals</del>.</div>
+        <div><del>Indirect Addressing</del> increases the size of addresses that can be used.</div>
+        <div>Vertical bar in Sequence Diagram is called <del>an activation</del>.</div>
+        <div><img src="Image8.png"> <del>State Diagram</del></div>
+        <div>There is one line of <del>Assembly code</del> per line of Machine Code.</div>
+        <!-- Don't blame me if this stuff isn't entirely correct -->
+        <div>Assembly to Machine code is a <del>One to One</del> Relationship.</div>
+        <div>Assembly Language and Machine Code are machine <del>specific</del>.</div>
+        <div>Assembly code uses <del>Labels</del> to allow selection.</div>
+        <div>Machine code operates on <del>bytes</del> of data.</div>
+        <div>Assemblers turn <del>Symbolic</del> Addresses into Numeric Addresses.</div>
+        <div>Assemblers turn Symbolic Addresses into <del>Numeric Addresses</del>.</div>
+        <div>Assemblers create <del>symbol tables</del> to match labels to addresses.</div>
+        <div>Assemblers create symbol tables to match <del>labels</del> to <del>addresses</del>.</div>
+        <div>Scheduling and priorities are used to <del>maximise the use of the</del> computer <del>resources</del>.</div>
+    </main>
+    <main id="shuffled">
+    </main>
+</body>

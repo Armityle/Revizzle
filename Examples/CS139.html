@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Quiz CS139</title>
+	<script src="JS.js"></script>
+	<link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+	<button onclick="shuffle();">Shuffle</button>
+	<main id="ordered">
+		<div>Load balancer:
+			<ul>
+				<li>receives <del>requests</del> from <del>clients</del> and <del>shares them among servers</del></li>
+				<li>algorithms for this include:
+					<ul>
+						<li><del>Round Robin</del></li>
+						<li><del>Weighted Round Robin</del></li>
+						<li><del>Least active sessions</del></li>
+					</ul>
+				</li>
+			</ul>
+		</div> 
+		<div>
+			Disadvantage of having a database on another machine in RAM is: <del>the time taken sending requests across a network</del>.
+		</div>
+		<div>
+			semantic = <del>meaning</del><br>
+			semantic HTML <del>tells the interpreter what the content is for</del>
+		</div>
+		<div>
+			<del>session</del> before <del>headers</del>
+		</div>
+		<div>
+			HTTPS layers <del>HTTP</del> on top of <del>SSL/TLS</del> protocol.
+		</div>
+		<div>
+			Certificate authorities are typically <del>big companies</del>.
+		</div>
+		<div>
+			Persistant XSS is when <del>the JavaScript is in the database and therefore lasts for more than one request</del>
+		</div>
+		<div>
+			Non-persistant XSS is when the <del>JavaScript lasts for a single request such as by being inserted into the GET/POST request</del>.
+		</div>
+		<div>
+			HTTP port number: <del>80 </del>
+		</div>
+		<div>
+			FTP port number: <del>21 </del>
+		</div>
+		<div>
+			HTTPS port number: <del>443</del>
+		</div>
+		<div>
+			SSH port number: <del>22 </del>
+		</div>
+		<div>
+			Ten steps for a HTTPS handshake:
+			<ol>
+				<li>Client and server <del>build a TCP connection</del></li>
+				<li>Client <del>sends specifications to the server</del> (<del>SSL/TLS version</del>, <del>compression method</del>, <del>ciphersuites</del>)</li>
+				<li>Server <del>selects the highest supported version of SSL/TLS version, compression method, ciphersuites</del></li>
+				<li>Server <del>sends certificate</del></li>
+				<li><del>Certificate</del> must be <del>trusted by the client or someone they trust</del>.</li>
+				<li><del>A key might be exchanged depending on the ciphersuite</del>.</li>
+				<li>Client and server <del>set up a key for symmetric encryption</del>.</li>
+				<li>Client <del>requests all communication be encrypted</del>.</li>
+				<li>Server <del>verifies the Message Authentication Code</del> and <del>the message can be decrypted</del>.</li>
+				<li>Handshake is complete. A secure network is now established.</li>
+			</ol>
+		</div>
+		<div>
+			URL syntax: <del>scheme</del>://<del>domain</del>:<del>port</del>/<del>path</del>?<del>queryString</del>#<del>fragmentId</del>
+		</div>
+		<div>
+			Doctype is specified so <del>the browser knows to use HTML5 standards</del> and <del>how to interpret the HTML</del>.
+		</div>
+		<div>
+			HTML5 needs a <del>title</del> and <del>doctype</del> to be valid.
+		</div>
+		<div>
+			&lt;th&gt; tags go in <del>&lt;thead&gt; tags</del>.
+		</div>
+		<div>
+			Inline = <del>goes with the flow of text on the page</del>
+		</div>
+		<div>
+			HTTP methods:
+			<ul>
+				<li>GET - <del>requests the source</del></li>
+				<li>POST - <del>requests the the server accepts the enclosed entity</del></li>
+				<li>HEAD - <del>requests the response header only</del></li>
+				<li>PUT - <del>requests the server stores the enclosed entity under the URI</del></li>
+				<li>DELETE - <del>deletes the specified resource</del></li>
+				<li>TRACE - <del>echoes back the received request</del> (<del>to see what in between servers are changing</del>)</li>
+				<li>OPTIONS - <del>requests returns HTTP methods supported by the server</del></li>
+				<li>CONNECT - <del>converts the connection to TCP/IP tunner (used for SSL)</del></li>
+				<li>PATCH - <del>apply partial modifications to a resource</del></li>
+			</ul>
+		</div>
+		<div>
+			HTTP request message:
+			<ul>
+				<li><del>request line</del> e.g. <del>GET/index HTTP/1.1</del></li>
+				<li><del>headers</del></li>
+				<li><del>empty line</del></li>
+				<li><del>optional message body</del></li>
+			</ul>
+		</div>
+		<div>
+			What is the line separator for HTTP request messages? <del>\r\n</del>
+		</div>
+		<div>
+			Status codes:
+			<ul>
+				<li>1xx: <del>information</del></li>
+				<li>2xx: <del>success</del></li>
+				<li>3xx: <del>redirection</del></li>
+				<li>4xx: <del>client error</del></li>
+				<li>5xx: <del>server error</del></li>
+			</ul>
+		</div>
+		<div>
+			DNS = <del>Domain Name System</del>
+		</div>
+		<div>
+			jQuery is less <del>verbose</del> and fixes <del>inconsistencies between browsers</del>
+		</div>
+		<div>
+			Tables for layout is bad because <del>they're not semantically correct</del> which gives problems for <del>screen readers</del> and they're slower to load than CSS.
+		</div>
+		<div>
+			Remove from an array by value: <del>array_values(array_diff($arr,['elem']))</del>.
+		</div>
+		<div>
+			CSS Position:
+			<ul>
+				<li>static - <del>the default; positioned in the flow of the page</del></li>
+				<li>fixed - <del>is relative to the view port; doesn't move with scrolling</del></li>
+				<li>relative - <del>positioned relative to its initial position</del></li>
+				<li>absolute - <del>relative to the first non-static parent</del></li>
+			</ul>
+		</div>
+		<div>
+			CSS style priorities
+			<ol>
+				<li><del>element style attribute</del></li>
+				<li><del>id style</del></li>
+				<li><del>class, attribute, pseudo classes (:)</del></li>
+				<li><del>most specific nesting to least</del></li>
+				<li><del>user agent stylesheet</del></li>
+				<li><del>inherited from parent</del></li>
+			</ol>
+		</div>
+		<div>
+			JS array removal: <del>arr.splice(position, 1)</del><br>
+			Reason: <del>arr.splice(pos, length, [replacements])</del>
+		</div>
+		<div>
+			PHP array removal: <del>array_splice($arr, $pos, 1)</del><br>
+			Reason: <del>array_splice($arr, $pos, $length, [replacements])</del>
+		</div>
+		<div>
+			DNS caching reduces <del>strain on the nameserver</del>
+		</div>
+		<div>
+			Local DNS caching reduces <del>time for the user</del>
+		</div>
+		<div>
+			DNS maps <del>names</del> to <del>IP addresses</del>
+		</div>
+		<div>
+			DNS is a <del>hierarchical tree</del> structure
+		</div>
+		<div>
+			Root zone / <del>top level domain</del> examples <del>.com .org .net</del>
+		</div>
+		<div>
+			Top level domains are controlled by <del>IANA</del> <del>Internet Assigned Numbers Authority</del>
+		</div>
+		<div>
+			DNS requests go first to <del>top level domain</del> and then get <del>passed along the hierarchy</del>.
+		</div>
+		<div>
+			DNS caching order:<br>
+			<del>Browser</del> -> <del>OS</del> -> <del>ISP</del> -> <del>recursive search</del>
+		</div>
+		<div>
+			DNS caches last for a TTL (TTL = <del>Time to Live</del>) value, which lasts weeks to seconds.
+		</div>
+		<div>
+			Facets of usability
+			<ul>
+				<li>Effectiveness <del>accuracy and completeness of goals</del></li>
+				<li>Efficiency <del>resources used: space &amp; time</del></li>
+				<li>Satisfaction <del>comfort and acceptability</del></li>
+			</ul>
+		</div>
+		<div>
+			Usability concepts:
+			<ul>
+				<li>Visibility - <del>how easy it is to understand how to use it</del></li>
+				<li>Perceived affordance - <del>what properties an object has and what can be done to it</del></li>
+				<li>Feedback - <del>give user information about what action has been done</del></li>
+				<li>Constraints - <del>restraining the kind of user interaction that can take place at a given time</del></li>
+				<li>Mapping - <del>relationship between controls and their effects</del></li>
+				<li>Consistency - <del>using similar operations on similar elements for similar tasks</del></li>
+			</ul>
+		</div>
+		<div>
+			Scaling up = <del>getting one bigger server with more RAM / CPUs</del>
+		</div>
+		<div>
+			Scaling out = <del>adding more servers in parallel and using a load balancer between them</del>
+		</div>
+		<div>
+			<p>Scaling out requires more maintenance, more expenditure</p>
+			<p>Scaling out makes it cheap to add capacity</p>
+			<p>Scaling out makes it easier to handle server failures</p>
+			<p>When Scaling out, more servers can be leased during high traffic, making it cheaper</p>
+		</div>
+		<div>MAC = <del>Message Authentication Code</del></div>
+		<div>
+			Using a separate site for devices of different sizes<br>
+			Advantages:
+			<ul>
+				<li>Easy to make the style for each separate page</li>
+				<li>It's hard to make responsive design cater for all sizes.</li>
+			</ul>
+			Disadvantages:
+			<ul>
+				<li>Won't work for new user agents</li>
+				<li>Double the work rewriting pages</li>
+			</ul>
+		</div>
+		<div>CSS cascading hierarchy:
+			<ol>
+				<li><del>Inline style</del></li>
+				<li><del>Internal stylesheet</del></li>
+				<li><del>External stylesheet</del></li>
+				<li><del>User agent stylesheet</del></li>
+			</ol>
+		</div>
+		<div>
+			Ways of measuring throughput include: <del>JMeter</del>, <del>ab</del>, <del>seige</del>.
+		</div>
+	</main>
+
+	<main id="shuffled"></main>
+</body>

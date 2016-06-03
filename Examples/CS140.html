@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Quiz CS140</title>
+    <script src="JS.js"></script>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+	<button onclick="shuffle();">Shuffle</button>
+	<main id="ordered">
+        <div>
+            MAC: <del>Mandatory Access Control</del><br>
+            Meaning: <del>The institution has authorisation rules that are applied to all users in the system and can't be changed by the users.</del>
+        </div>
+        <div>
+            DAC: <del>Discretionary Access Control</del><br>
+            Meaning: <del>Allows the object's owner the ability to change its permissions.</del>
+        </div>
+        <div>
+        	RAC: <del>Role-based Access Control</del>
+        	<br>
+        	Meaning: <del>Permissions are based on certain roles, which can be acquired</del>
+        </div>
+        <div>(Clearance, {Classes}). A user with (C1,L1) has access to an object of (C2,L2) when <del>C1 >= C2 and L2 subset L1</del>.</div>
+        <div>What type of ordering is multi-level security? <del>Partial Order</del>
+        <div>Permutation Cipher: <del>changes the order of the data</del>
+        <div>Substitution Cipher: <del>changes data for another value</del>
+		<div>A security label consists of (<del>classification</del>, <del>{set of categories}</del>)</div>
+		<div>
+			For any two labels: (c1, S1) and (c2, S2)<br>
+			Greatest Lower Bound: (<del>lowest(c1,c2)</del>, <del>S1 &cap; S2</del>)
+		</div>
+		<div>
+			For any two labels: (c1, S1) and (c2, S2)<br>
+			Least Upper Bound: (<del>greatest(c1,c2)</del>, <del>S1 &cup; S2</del>)
+		</div>
+		<div>
+			Replay Attack: A computer <del>takes a valid message sent between two users</del> and <del>replays the message to the receiver</del>. Because <del>the message is validated</del>, <del>the attacker will be accepted as the sender</del>.
+		</div>
+		<div>
+			Unilateral Authentication Method:<br>
+			<del><img src="CS140 Unilateral Authentication.png"></del>
+		</div>
+		<div>
+			Multilateral Authentication Method:<br>
+			<del><img src="CS140 Multilateral Authentication.png"></del>
+		</div>
+		<div>Authentication spoofing is <del>a man in the middle attack for authentication</del></div>
+		<div>
+			Solution to Authentication Spoofing:<br>
+			Sending the identity of the recipient along with the message, which together are encrypted, can prove to the receiver whether they were the intended recipient.
+		</div>
+		<div>
+			A security lattice exists so that <del>we can calculate the lowest security label we can give to an object so that two subjects can access it, by calculating the least upper bound of the subjects' permissions</del>, and <del>so that we can determine the highest security level that can be assigned to an object such that two given subjects can access it, by calculating the greatest lower bound between the subjects.</del>
+		</div>
+		<div>
+			x<sup>AB</sup> mod n &#8801; <del>(x<sup>A</sup> mod n)<sup>B</sup> mod n</del>
+		</div>
+		<div>
+			(x<sup>A</sup> mod n)<sup>B</sup> mod n &#8801; <del>(x<sup>B</sup> mod n)<sup>A</sup> mod n</del>
+		</div>
+		<div>
+			Primitive root: <del>A number whose successive powers (mod n) give all numbers up to n</del>.
+			<br>
+			E.g. <del>3 is a primitive root of 7</del>
+		</div>
+		<div>
+			Diffie-Hellman-Merkle Key Exchange Process:
+			<br>
+			<del><img src="CS140 DHM Key Exchange.png"></del>
+		</div>
+		<div>
+			CIA Triangle:
+			<ul>
+				<li>
+					C<del>onfidentiality</del>: <del>data can only be read by the intended parties</del>
+				</li>
+				<li>
+					I<del>ntegrity</del>: <del>data can only be altered by the intended parties</del>
+				</li>
+				<li>
+					A<del>vailability</del>: <del>intended parties are not prevented or impeded (slowed) from using the data at any time</del>
+				</li>
+			</ul>
+		</div>
+		<div>
+			Two principles of access control:
+			<ol>
+				<li>Principle of <del>least privilege</del>: <del>only give the least rights necessary</del></li>
+				<li>Principle of <del>fail safe defaults</del>: <del>assume not permission until it is proven i.e. the default is no</del></li>
+			</ol>
+		</div>
+		<div>
+			non-repudiation = <del>sender can't deny having sent the message</del>
+		</div>
+		<div>
+			risk = <del>an expectation of loss expressed as the probability that a particular threat will exploit a particular vulnerability with a particular harmful result</del>
+		</div>
+		<div>
+			Ways of managing risk:
+			<ul>
+				<li>d<del>etection</del> - <del>not stopping the attack but being able to know when it happens, record logs</del></li>
+				<li>r<del>eaction</del> - <del>not stop it from being able to happen, but have steps in place to deal with it when it does</del></li>
+				<li>risk a<del>cceptance</del> - <del>just dealing with the risk</del></li>
+				<li>risk a<del>voidance</del> - <del>taking steps to reduce the likelihood a vulnerability will be exploited e.g. blocking certain countries by IP address</del></li>
+				<li><del>straight</del> f<del>ix</del> - <del>fix the problem</del></li>
+				<li>risk t<del>ransference</del> - <del>taking out insurance so that the risk is also on the insurance company and it won't be a total loss, if there is a successful attack</del></li>
+			</ul>
+		</div>
+		<div>
+			Qualitative analysis of risk:
+			<ul>
+				<li>D<del>amage</del>: <del>how bad would an attack be?</del></li>
+				<li>R<del>eproducability</del>: <del>how easy is it to reproduce the attack?</del></li>
+				<li>E<del>xploitability</del>: <del>how much work is it to launch an attack?</del></li>
+				<li>A<del>ffected users</del>: <del>how many people will be impacted?</del></li>
+				<li>D<del>iscoverability</del>: <del>how easy is it to discover the threat?</del></li>
+			</ul>
+		</div>
+		<div>
+			Quantitative analysis of risk: <del>Fault Tree Analysis</del> <del>uses probabilities to assess risk drawn in a tree structure</del>
+			<br>
+			<del><img src="CS140 FTA.png"></del>
+		</div>
+		<div>
+			(informal) risk = <del>assetsValue x threats x vulnerabilities</del>
+		</div>
+		<div>
+			<del>Viruses &nbsp; &nbsp; &nbsp; &nbsp;</del> can replicate into other executables and infect them.
+		</div>
+		<div><del>Worms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</del> are standalone and don't need a host program.</div>
+		<div>
+			<del>Viruses and worms</del> self replicate
+		</div>
+		<div>
+			<del>Viruses and worms</del> can have an infection mechanism, a trigger, and a payload.
+		</div>
+		<div>
+			Entropy measures <del>uncertainty in password value</del>
+		</div>
+		<div>Brute force = <del>every possible password is tried</del></div>
+		<div>Dictionary attack = <del>words and common passwords are tried</del></div>
+		<div>Lookup table = <del>pre-computes lots of hashes of random passwords</del></div>
+		<div>Reverse lookup table = <del>like a lookup table but with reduced space using hash chains</del></div>
+		<div>Rainbow table = <del>Like a reverse lookup table but with different reduction functions to reduce collisions</del></div>
+		<div>
+			sha256 pads the input <del>to meet the 512 bit block size</del>
+			<br>
+			The padded values are <del>1 followed by only 0s</del>
+		</div>
+		<div>
+			Access control matrix is <del>a grid of subjects to objects</del>
+			<br>
+			Disadvantage = <del>space is wasted by storing empty cells which are likely to be sparse</del>
+		</div>
+		<div>Access Control List = <del>A list of user permissions grouped by file</del></div>
+		<div>Capabilities List = <del>A list of file permissions grouped by user</del></div>
+		<div>Access Control Lists and Capabilities List are both needed because <del>it's computationally faster to find out permissions, when storing the data both ways</del></div>
+		<div><del>AES</del> is faster than <del>DES</del>. <del>AES</del> takes longer to crack.</div>
+		<div>DES = D<del>ata</del> E<del>ncryption</del> S<del>tandard</del></div>
+		<div>AES = A<del>dvanced</del> E<del>ncryption</del> S<del>tandard</del></div>
+		<div>AES &amp; DES both use permutation and substitution.</div>
+		<div>Public key encryption is computationally expensive.</div>
+		<div>/etc/passwd has other useful information which is why it's world readable e.g. user id numbers</div>
+		<div>/etc/shadow contains the salt &amp; hash and is only readable by the root</div>
+		<div>
+			Principles of good encryption:
+			<ul>
+				<li>C<del>onfusion</del>: <del>relationship between cipher text and key is complex</del></li>
+				<li>D<del>iffusion</del>: <del>changing a character of the plain text should change much of the cipher text</del></li>
+				<li><del>hard to break when knowing the encryption process</del></li>
+				<li><del>cost effective (time &amp; space)</del></li>
+			</ul>
+		</div>
+		<div>Replay attack: <del>A message that is authenticated can be taken by another computer and resent to the recipient to gain trust as the computer with that identity</del></div>
+		<div>
+			Solutions to a Replay Attack:
+			<ul>
+				<li><del>A session token is generated as another form of authentication.</del> <del>Must be decryptable with a key.</del></li>
+				<li><del>Timestamping</del>: <del>A timestamp is added which allows the user to know that the message is repeated</del></li>
+			</ul>
+		</div>
+		<div>Unilateral Authentication = <del>is one way</del></div>
+		<div>Multilateral Authentication = <del>is both ways</del></div>
+		<div>
+			Features that make VMs secure:
+			<ul>
+				<li>L<del>ow privilege</del> - <del>can be monitored for viruses by an uncompromised system</del></li>
+				<li>I<del>solation</del> - <del>one infected VM won't infect others</del></li>
+				<li>S<del>tate recording</del> - <del>can revert to a previous state after infection</del></li>
+				<li>T<del>ransience</del> - <del>ability to be turned off, means less time to contract viruses</del></li>
+			</ul>
+		</div>
+		<div>
+			Features that make VMs insecure:
+			<ul>
+				<li>
+					T<del>ransience</del>
+					<ul>
+						<li>difficult to identify which VMs are affected</li>
+						<li>VMs must be online to get scanned</li>
+						<li>infected VMs may appear briefly, infect others and then disappear</li>
+					</ul>
+				</li>
+				<li>
+					S<del>tate restoring</del>
+					<ul>
+						<li>Seems easy to restore therefore people care about security less</li>
+						<li>rolling back VMs can reintroduce vulnerabilities from before system updates</li>
+						<li>Backups can store sensitive data in RAM</li>
+						<li>Backup theft won't show signs of intrusion</li>
+					</ul>
+				</li>
+				<li>Shared memory and network can allow a VM to infect another</li>
+				<li>Denial of Service attack on one VM will affect performance of other VMs on the same machine</li>
+			</ul>
+		</div>
+		<div>
+			Firewall: <del>filters information coming through an internet connection based on static rules</del>
+		</div>
+		<div>Firewalls can use Packet Filtering, which <del>blocks packets based on their source, destination, ports, protocols, and maybe data within the packet</del></div>
+		<div>
+			<p>
+				Firewalls can use Stateful Inspection: <del>records the state of all connections to determine whether: It's the start of a new connection, an existing connection, or not part of any existing connection</del>
+			</p>
+			<p><del>This allows all packets in the same connection to be processed rapidly &#8756; faster than packet inspection</del></p>
+		</div>
+		<div>
+			<p>Firewalls can use Proxy Service: <del>Uses 2 TCP connections. One between the internet and the wall, the other between the wall and the client.</del> <del>Can use this position to do full data checking and anti-virus</del></p>
+			<p>It is more <del>secure</del>, less <del>efficient</del>, and uses more <del>memory</del>.</p>
+		</div>
+		<div>
+			ActiveX allows <del>different software to share functionality &amp; information</del>
+		</div>
+		<div>
+			Problems with ActiveX:
+			<ul>
+				<li><del>Malware can be disguised as ActiveX</del></li>
+				<li><del>People just click yes to allow it, not knowing what it does.</del></li>
+			</ul>
+		</div>
+		<div>
+			MAC = M<del>essage</del> A<del>uthenticaion</del> C<del>ode</del>
+		</div>
+		<div>
+			Digital Signature Method:
+			<table>
+				<thead>
+					<tr>
+						<th>sender</th>
+						<th>receiver</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><del>message = "..."</del></td>
+						<td><del>signature = getSignature()</del></td>
+					</tr>
+					<tr>
+						<td><del>digest = hash(message)</del></td>
+						<td><del>digest = decrypt(sender.publicKey, signature)</del></td>
+					</tr>
+					<tr>
+						<td><del>signature = encrypt(sender.privateKey, digest)</del></td>
+						<td>
+							<del>if hash(message) = digest:</del>
+							<br>
+							<del>&#09;valid</del>
+							<br>
+							<del>else:</del>
+							<br>
+							<del>&#09;invalid</del>
+						</td>
+					</tr>
+					<tr>
+						<td><del>send(encrypt(sender.privateKey, message) + signature)</del></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div>
+			RSA encryption:
+			<ul>
+				<li>
+					Alice's public key, n = <del>pxq</del>
+					<br>
+					Which is determined by two <del>big primes</del>: p,q
+					<br>
+					e is a number co-prime with <del>p, q, (p-1)(q-1)</del>
+					<br>
+					e gets sent <del>publicly across the network</del>
+					<br>
+				</li>
+				<li>
+					Alice's private key is d such that
+					<br>
+					ed = <del>1 mod ((p-1)(q-1))</del>
+				</li>
+				<li>Bob encrypts message, M, using: C &#8801; <del>M<sup>e</sup> mod n</del></li>
+				<li>Alice decrypts C using: M &#8801; <del>C<sup>d</sup> mod n</del></li>
+			</ul>
+		</div>
+		<div>keyed hash = <del>hash(message + secret key)</del></div>
+		<div>
+			Digital signature vs MAC
+			<table>
+				<thead>
+					<tr>
+						<th>Digital Signature</th>
+						<th>MAC</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>uses private key</td>
+						<td>uses shared secret key</td>
+					</tr>
+					<tr>
+						<td>gives integrity</td>
+						<td>gives integrity</td>
+					</tr>
+					<tr>
+						<td>gives non-repudiation</td>
+						<td>no non-repudiation because <del>more than one person can have a secret key</del></td>
+					</tr>
+					<tr>
+						<td><del>slower</del> due to <del>asymmetric key encryption, because it uses a lot of multiplication</del></td>
+						<td><del>quicker</del> due to <del>symmetric key encryption, because it uses bitwise operations e.g. XOR and shifts</del></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div>
+			Asset = <del>Anything with value that we wish to protect</del>
+		</div>
+		<div>
+			Vulnerability = <del>A flaw or weakness in a system's design, implementation, operation, or management that could be exploited to violate security</del>
+		</div>
+		<div>
+			Threat = <del>A potential for violation of security, whether or not something bad happens. Exists when there is circumstance, capability, action, or event that could breach security.</del>
+		</div>
+		<div>
+			Attack = <del>An assault on system security that derives from an intelligent threat. A deliberate attempt to evade security services and violate the security policy of a system.</del>
+		</div>
+		<div>
+			Microsoft security evaluation model: STRIDE
+
+			<ul>
+				<li>S<del>poofing identity</del></li>
+				<li>T<del>ampering</del></li>
+				<li>R<del>epudiation</del></li>
+				<li>I<del>nformation disclosure</del></li>
+				<li>D<del>enial of service</del></li>
+				<li>E<del>levation of privilege</del></li>
+			</ul>
+			
+		</div>
+		<div>
+			A certificate authority signs a user by <del>creating a signature from the user's public key and identity, signed with the CA's private key</del>
+		</div>
+		<div>
+			Digital Certificates contain information such as:
+			<ul>
+				<li><del>Information about the issuing CA e.g. address, name</del></li>
+				<li><del>hash and encryption algorithms used</del></li>
+				<li><del>The subject's (receiver's) public key</del></li>
+				<li><del>The signature</del></li>
+				<li><del>Valid from &amp; until</del></li>
+			</ul>
+		</div>
+		<div>
+			Web of Trust has no <del>centralised certificate authority</del>. Anyone in the web can <del>sign other people's certificates</del>.
+		</div>
+		<div>Validity, in the Web of Trust, refers to <del>whether their public key is considered to be valid</del>.</div>
+		<div>Trust, in the Web of Trust, refers to <del>whether they are considered to make good decisions about whose certificates to sign</del>.</div>
+		<div>In the Web of Trust, when A -> B (T:Full, V:Full) and B -> C (T:Full, V:Full), what is A -> C? <del>(T:Full, V:Full)</del></div>
+		<div>In the Web of Trust, when A trusts B marginally, and B -> C (T:Full, V:Full), what is A -> C <del>(T:Marginal, V:Marginal)</del> </div>
+		<div>In the Web of Trust, when the trust is not marginal or full it is <del>unknown</del>.</div>
+		<div>SSL can use <del>Digital Signature or Message Authentication Code</del> to verify the integrity of the message.</div>
+		<div>Message Authentication Code is generated by <del>hashing the message + the shared secret key</del>. So that the receiver can <del>hash the message they received with the secret key</del> confirm integrity of the message.</div>
+    </main>
+
+    <main id="shuffled"></main>
+</body>

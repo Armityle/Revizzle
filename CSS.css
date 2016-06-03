@@ -1,0 +1,54 @@
+body {
+	color: black;
+	font-family: helvetica;
+	margin: 20px 50px;
+}
+div {
+	margin: 15px 0;
+}
+ul,ol {
+	margin-top: 0;
+}
+img {
+	margin: 0;
+	padding: 0;
+}
+del {
+	background-color: #DDDDDD;
+	border-color: #DDDDDD;
+	color: #DDDDDD;
+	display: inline-block;
+	margin: 0 0 1px 0;
+	padding: 0;
+	text-decoration: none;
+}
+del img {
+	opacity: 0;
+}
+del:hover {
+	color: black;
+	cursor: none;
+}
+del img:hover {
+	opacity: 1;
+}
+
+p {
+	margin: 0 0 4px 0;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 4px;
+}
+table td, table th {
+	border: 1px solid #666666;
+	padding: 1px 4px;
+}
+
+#ordered {
+	display: block;
+}
+#shuffled {
+	display: none;
+}
