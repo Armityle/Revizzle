@@ -11,6 +11,7 @@ function shuffle() {
 		let numOfChildren = shuffled.children.length;
 		let rand = getRandom(numOfChildren + 1);
 		
+		//insert each div at a random location
 		if (rand !== numOfChildren) {
 			shuffled.insertBefore(divs[i], shuffled.children[rand]);
 		} else {
@@ -18,6 +19,7 @@ function shuffle() {
 		}
 	}
 	
+	//hide the ordered <main> and show the shuffled one
 	ordered.style.display = 'none';
 	shuffled.style.display = 'block';
 }
