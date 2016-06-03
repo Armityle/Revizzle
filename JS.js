@@ -1,15 +1,15 @@
 function getRandom(maxNum) {
-	var rand = Math.random();
+	let rand = Math.random();
 	return Math.round(rand * 1000) % maxNum;
 }
 
 function shuffle() {
-	var divs = document.getElementById('ordered').getElementsByTagName('div');
-	var shuffled = document.getElementById('shuffled');
+	let divs = document.getElementById('ordered').getElementsByTagName('div');
+	let shuffled = document.getElementById('shuffled');
 	
 	for (let i = divs.length-1; i>=0; i--) {
-		var numOfChildren = shuffled.children.length;
-		var rand = getRandom(numOfChildren + 1);
+		let numOfChildren = shuffled.children.length;
+		let rand = getRandom(numOfChildren + 1);
 		
 		if (rand !== numOfChildren) {
 			shuffled.insertBefore(divs[i], shuffled.children[rand]);
