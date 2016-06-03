@@ -9,18 +9,17 @@ function getRandom(maxNum) {
 }
 
 function shuffle() {
-	var ps = document.getElementById('ordered').getElementsByTagName('div');
+	var divs = document.getElementById('ordered').getElementsByTagName('div');
 	var shuffled = document.getElementById('shuffled');
-	for (var i = ps.length-1; i>=0; i--) {
+	
+	for (let i = divs.length-1; i>=0; i--) {
 		var numOfChildren = shuffled.children.length;
 		var rand = getRandom(numOfChildren + 1);
 		if (rand !== numOfChildren) {
-			shuffled.insertBefore(ps[i], shuffled.children[rand]);
+			shuffled.insertBefore(divs[i], shuffled.children[rand]);
 		} else {
-			shuffled.appendChild(ps[i]);
+			shuffled.appendChild(divs[i]);
 		}
-		
-		//alert(i + "," + numOfChildren + "," + rand);
 	}
 	
 	ordered.style.display = 'none';
