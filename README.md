@@ -10,8 +10,8 @@ Requirements for the HTML
 
 Needs the following tags:
 ```HTML
-    <main id="ordered"></main>
-    <main id="shuffled"></main>
+<main id="ordered"></main>
+<main id="shuffled"></main>
 ```
 
 Each question should be written in a *div* inside main#ordered.
