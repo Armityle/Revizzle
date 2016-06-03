@@ -1,8 +1,3 @@
-function removeItem(arr,key) {
-	arr.splice(key,1);
-	return arr;
-}
-
 function getRandom(maxNum) {
 	var rand = Math.random();
 	return Math.round(rand * 1000) % maxNum;
@@ -15,6 +10,7 @@ function shuffle() {
 	for (let i = divs.length-1; i>=0; i--) {
 		var numOfChildren = shuffled.children.length;
 		var rand = getRandom(numOfChildren + 1);
+		
 		if (rand !== numOfChildren) {
 			shuffled.insertBefore(divs[i], shuffled.children[rand]);
 		} else {
